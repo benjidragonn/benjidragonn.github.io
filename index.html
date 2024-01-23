@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio  Benjamin</title>
+    <link href="Portfolio CSS.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Contenu de l'overlay -->
+
+<div class="overlay-haut">
+
+    <div class="contenu-portfolio">
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#présentation">Présentation</a></li>
+                <li><a href="#competences">Competences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a id="openBtn">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<!-- Modal CV -->
+
+<div id="pdfModal" class="modal">
+    <span class="close" id="closeBtn">&times;</span>
+        <div class="modal-content">
+        <iframe id="pdfViewer" src="CV Dessin.pdf" width="100%" height="100%"></iframe>
+    </div>
+</div>
+
+
+<!-- Partie 1 Arrière plan -->
+
+<div class="hauteur-contenu">
+<div class="gradient-background">
+
+
+<!-- Partie 2 Présentation -->
+
+    <br>
+    <section id="présentation">
+    <div class="presentation">
+        <h2>
+            <p>Je me présente, je m'appelle Benjamin j'ai 21 ans,</p>
+            <p>Je suis un débutant dans le domaine du code et de l'informatique ce qui me fascine.</p>
+            <p>Avant l'informatique, j'était en études pour devenir dessinateur procheteur. J'ai eu mon Bac Pro et un BTS, j'étais partit pour une Licence IME mais aucune entreprise m'as accepté ou avait de la place.</p>
+            <p>Après mes études, j'ai continué dans la voie de dessinateur procheteur pendant 6 mois.</p>
+            <p>Par la suite, j'ai voulu découvrir d'autre horizon sur d'autres métier qui pourrait me plaire.</p>
+            <p>J'ai connue des personnes sur internet qui faisais des sites et du code. Ca m'a fasciné, et je leur ais demandé de m'apprendre le code, et depuis juillet 2023, je m'entraîne dessus.</p>
+            <p>A côté du code, mes passions sont le dessin, le graphisme et le tir à l'arc.</p>
+        </h2>
+    </div>
+    </section>
+    <br>
+
+
+
+<!-- Partie 3 competences -->
+
+<section id="competences">
+<div class="rectangle">
+    <div class="type">
+        <!-- Le contenu à l'intérieur du rectangle -->
+        <button class="code" onclick="showContent('code')">Code</button>
+        <button class="competences" onclick="showContent('competences')">Compétences</button>
+        <button class="logiciel" onclick="showContent('logiciel')">Logiciel</button>
+        <div id="message">Cliquez sur les boutons pour faire apparaître</div>
+    </div>
+    <!-- Divs de contenu pour chaque bouton -->
+
+    <!-- Contenu spécifique au bouton Code -->
+    <div id="codeContent" class="content">
+        <div class="contenu-code">
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JS</button>
+            <button>PHP</button>
+        </div>
+    </div>
+
+    <!-- Contenu spécifique au bouton Compétences -->
+    <div id="competencesContent" class="content">
+        <div class="contenu-competences">
+            <button>Gestion de documents</button>
+            <button>Recherche d'informations</button>
+            <button>dessin papier</button>
+            <button>dessin technique</button>
+            <button>Gestion de projet</button>
+            <button>Assemblage de matériel informatique</button>
+            <button>Modélisation 3D</button>
+            <button>Impression 3D</button>
+            <button>Mesure de précision</button>
+        </div>
+    </div>
+
+    <!-- Contenu spécifique au bouton Logiciel -->
+    <div id="logicielContent" class="content">
+        <div class="contenu-logiciel">
+            <button>Paint Tool SAI</button>
+            <button>Krita</button>
+            <button>Adobe Photoshop</button>
+            <button>Microsoft Office</button>
+            <button>Microsoft Word</button>
+            <button>Microsoft Excel</button>
+            <button>Microsoft PowerPoint</button>
+            <button>SOLIDWORKS</button>
+            <button>CATIA</button>
+            <button>Autodesk Inventor</button>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Partie 4 Réalisation -->
+
+<section id="projets">
+        <div class="container">
+            <div class="box">
+                <p>Réalisation 1</p>
+                <p>Réalisation d'un Overlay, pour présenté des résaux en mouvement.</p>
+                <br>
+                <div class="image-container">
+                    <img class="img-projet1"src="Projet 1.png" alt="Description de l'image">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <u><p>Projet 1</p></u>
+                            <p>- Il doit comporté 4 images.</p>
+                            <p>- Faire une translation vers le haut en Y</p>
+                            <p>- La translation doit être représenté sans fin</p>
+                        <br><br><br>
+                        </div>
+                        <a href="http://127.0.0.1:5500/Pub%20r%C3%A9saux/index.html" target="_blank">
+                        <div class="bouton-site">
+                            <div class="overlay-text-bouton">Accéder à la visualisation
+                            </div>
+                        </div>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p>Réalisation 2</p>
+                <u><p>Projet</u> :</p>
+                <p>- Réalisation d'un site</p>
+            </div>                
+            <div class="box">
+                <p>Réalisation 3</p>
+                <u><p>Projet</u> :</p>
+                <p>- En recherche</p>
+            </div>
+        </div>
+</section>
+
+</div>
+</div>
+</body>
+
+<!-- Fin partie 1 arrière -->
+
+
+<!-- Bas de page -->
+
+<footer>
+<section id="contact">
+        <div class="cate-footer">
+            <div class="footer-left">
+                <h4>Coordonnées</h4>
+                <p>Ile-de-France</p>
+                <p>0601103759</p>
+                <p>marco.benjaminedpi@gmail.com</p>
+            </div>
+    
+            <div class="footer-right">
+                <h4>Liens et Téléchargement</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/marco-benjamin/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://linktr.ee/MARCO_Benjamin" target="_blank">Linktr.ee</a></li>
+                    <li><a href="CV Dessin.pdf" download>CV (Téléchargement)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-center">
+            <p>- © 2024</p>
+        </div>
+</section>
+</footer>
+
+<script src="script.js"></script>
+
+</html>

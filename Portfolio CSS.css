@@ -1,0 +1,446 @@
+
+
+html{
+    height: 100%;
+    margin: 0;
+}
+
+/* ----- Barre sur le côté ----- */
+
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1d1d1f; /* Couleur de la poignée de défilement */
+    border-radius: 13px; /* Coins arrondis de la poignée */
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #353836; /* Couleur de la piste de défilement */
+    width: 8px;
+}
+
+
+
+/* ----- CV -----*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 34, 227, 0.7);
+    z-index: 2000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 50%; /* Ajuster la largeur de la fenêtre modale ici */
+    max-height: 95vh; /* Limite la hauteur maximale de la fenêtre modale à 80% de la hauteur de la fenêtre */
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center; /* Centre le contenu horizontalement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 13em;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}
+
+#pdfViewer {
+    width: 100%;
+    height: 100%;
+    border: 0; /* Supprime la bordure du PDF */
+}
+
+#openBtn {
+    cursor: pointer;
+}
+
+
+
+/* ----- Body ----- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+}
+
+
+  .overlay-haut {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* couleur de fond avec une opacité de 50% */
+    color: white;
+    padding: 0;
+    align-items: center; /* Aligner les éléments verticalement au centre */
+    z-index: 20;
+  }
+  .contenu-portfolio {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    margin-top: 0;
+    margin-left: 100px;
+    padding: 15px 0;
+    color: #1d1c1c;
+    text-shadow: 2px 0px 1px rgb(0, 0, 0);
+}
+
+
+/* ----- Barre de navigation ----- */
+
+    nav {
+        position: relative;
+        top: 0;
+        left: 5em;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+    nav li
+    {
+        list-style-type: none;
+        float: left;
+        transition: 0.2s;
+    }
+
+    nav a
+    {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 105px;
+        font-weight: 600;
+        color: #a69db4;
+        transition: 0.2s;
+
+    }
+
+    nav ul
+    {
+        margin-left: 1px;
+        margin-right: 1px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    nav li:hover
+    {
+        background-color:#e6d7ff ;
+        transition: 0.2s;
+
+    }
+
+    nav li:hover a
+    {
+        color: blueviolet;
+        transition: 0.2s;
+
+    }
+
+
+    #présentation {
+        padding: 0;
+    }
+
+
+    #competences {
+        padding: 20px;
+    }
+
+
+    #projets {
+        padding: 60px;
+    }
+
+
+
+    #contact {
+        padding: 0;
+    }
+
+
+
+/* ----- Partie 1 Arrière plan ----- */
+
+    .hauteur-contenu {
+        /* Ajoutez du padding en haut pour éviter que le contenu soit caché derrière l'overlay */
+        padding-top: 50px; /* Ajustez selon vos besoins */
+    }
+
+    .gradient-background {
+        background: linear-gradient(to bottom, #1624a3, #c494f8);
+    }
+
+
+
+/* ----- Partie 2 Présentation ----- */
+
+    .presentation{
+        width: 60%;
+    }
+
+    h2{
+        text-align: left;
+        margin-left: 100px;
+        padding: 20px 0;
+        color: #ffffff;
+        text-shadow: 2px 0px 1px rgba(233, 231, 231, 0.445);
+        line-height: 30px;
+        font-size : 2 px;
+    }
+
+
+
+/* ----- Partie 3 competences ----- */
+
+        /* Styles CSS directement dans le fichier HTML */
+        .rectangle {
+            position: relative; /* Ajoutez une position relative pour positionner les divs enfants */
+            width: 75em; /* Définissez la largeur du rectangle */
+            height: 23em; /* Définissez la hauteur du rectangle */
+            background-color: #6524ce; /* Définissez la couleur de fond du rectangle */
+            text-align: center; /* Centrez le texte à l'intérieur du rectangle */
+            color: #fff; /* Définissez la couleur du texte */
+            line-height: 50px; /* Ajustez la hauteur de ligne pour centrer le texte verticalement */
+            margin: 0 auto ; /* Centrez horizontalement avec un écart de 30px du haut */
+            border-radius: 20px; /* Ajoutez des coins arrondis avec un rayon de 20 pixels */
+        }
+
+        /* Styles pour les boutons à l'intérieur du rectangle */
+        .type button {
+            padding: 12px 30px;
+            margin-top: 30px; /* Ajustez la marge pour positionner les boutons près de la bordure du rectangle en haut */
+            font-size: 25px;
+            background-color: #fff;
+            color: #000000;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative; /* Ajoutez une position relative pour positionner les divs enfants */
+            z-index: 10;
+        }
+
+        .code {
+            margin-right: 30px; /* Ajoutez un écart de 50 pixels à gauche du bouton Code */
+        }
+        
+        /* Ajoutez une classe spécifique pour le bouton Logiciel */
+        .logiciel {
+            margin-left: 30px; /* Ajoutez un écart de 50 pixels à droite du bouton Logiciel */
+        }
+
+        /* Styles pour les divs de contenu */
+        .content {
+            display: none; /* Cachez initialement tous les contenus */
+            position: absolute; /* Utilisez une position absolue pour les positionner par rapport au rectangle */
+            top: 50%; /* Placez le haut du contenu au centre du bouton */
+            left: 0;
+            right: 0;
+            transform: translateY(-50%); /* Ajustez pour centrer verticalement le contenu */
+            text-align: center; /* Alignez le texte au centre */
+            padding: 20px; /* Ajoutez un peu de rembourrage pour plus de lisibilité */
+        }
+
+        /* Affichez le contenu spécifique lorsque le div a la classe active */
+        .content.active {
+            display: block;
+        }
+
+        .contenu-code button,
+        .contenu-competences button,
+        .contenu-logiciel button {
+            padding: 12px 30px;
+            margin-top: 20px; /* Ajustez la marge pour positionner les boutons près de la bordure du rectangle en haut */
+            font-size: 25px;
+            color: #000000;
+            border: none;
+            border-radius: 35% 65% 47% 53% / 50% 58% 42% 50% ;
+            position: relative; /* Ajoutez une position relative pour positionner les divs enfants */
+        }
+
+        .contenu-code button { background-color: #ce6d24; }
+        .contenu-competences button { background-color: #ce2464; }
+        .contenu-logiciel button { background-color: #24ce65; }
+
+        /* Ajoutez un style pour le bouton actif */
+        .type button.active {
+            background-color: #0a46c884; /* Changez la couleur de fond du bouton actif */
+        }
+
+
+
+/* ----- Partie 4 Réalisation ----- */
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        color: #ccc8c8;
+    }
+
+    .box {
+        height: 500px;
+        flex: 1;
+        padding: 15px;
+        background-color: rgb(11, 11, 39);
+        border: 2px solid #090320;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out;
+        margin-right: 10px; /* Ajout de l'espace entre chaque boîte */
+        overflow: hidden; /* Masque le contenu qui dépasse */
+
+    }
+
+    .box:last-child {
+        margin-right: 0; /* Supprime l'espace à droite de la dernière boîte */
+    }
+
+    .box:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    /* ----- Réalisation 1 ----- */
+
+    .image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            overflow: hidden; /* Ajout de la propriété overflow pour cacher le débordement de l'image */
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.836);
+        overflow: hidden;
+        transition: height 0.3s;
+    }
+
+    .overlay-text {
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        top: 25%;
+        transform: translateY(-50%);
+    }
+
+
+    .image-container:hover .overlay {
+        height: 100%;
+    }
+
+
+    .img-projet1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .bouton-site {
+        width: 200px;
+        height: 120px;
+        animation: color-change-2x 2s linear infinite alternate both;
+        border-radius: 49% 51% 48% 52% / 75% 20% 80% 25%;
+        position: absolute;
+        top: 45%; /* Ajustez la position en Y selon vos besoins */
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+
+    .overlay-text-bouton {
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: absolute;
+        top: 50%; /* Ajustez la position en Y selon vos besoins */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @keyframes color-change-2x {
+        0% {
+            background: #4f10e2;
+        }
+        100% {
+            background: #b22cff;
+        }
+    }
+
+
+
+
+/* ----- Footer ----- */
+
+footer {
+    background-color: #333;
+    color:white;
+}
+
+.cate-footer {
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centre les éléments horizontalement */
+
+    padding: 20px;
+}
+
+.footer-right {
+    width: -45%;
+}
+
+.footer-left {
+    width: 45%;
+}
+
+h4 {
+    font-size: 1.2em; /* Taille du texte pour les titres (ajustez selon vos préférences) */
+}
+
+.footer-right a {
+    color: inherit; /* Couleur du texte héritée du parent (noir) */
+    text-decoration: none; /* Supprimer le soulignement */
+}
+
+.footer-right a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+.footer-center {
+    text-align: center;
+    padding-bottom: 1em;
+}

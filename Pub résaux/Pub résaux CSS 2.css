@@ -1,0 +1,48 @@
+.conteneur {
+    position: relative;
+    width: 100%; /* Largeur arbitraire du conteneur */
+    height: 100%; /* Hauteur arbitraire du conteneur */
+}
+
+.image-de-fond {
+    /* Assurez-vous que l'image de fond remplit l'espace du conteneur */
+    position: absolute;
+    width: auto;
+    height: 200%;
+    display: block;
+}
+
+/* Style de la boîte du diaporama */
+.slideshow-container {
+    width: auto;
+    height: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Style des images du diaporama */
+.mySlides {
+    width: 870px;
+    height: 1000px;
+    display: block;
+    text-align: center;
+    animation: slide-up 8s linear infinite; /* Animation de montée */
+    position: absolute;
+    left: 300px; /* Ajustez cette valeur selon votre besoin pour positionner l'image superposée */
+    /* Autres styles */
+}
+
+.taile-images {
+    width: 800px;
+    height: auto;
+}
+
+@keyframes slide-up {
+    100% {
+        transform: translateY(-50%);
+    }
+    0% {
+        transform: translateY(0%);
+    }
+}
