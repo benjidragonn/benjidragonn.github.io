@@ -221,14 +221,16 @@ h1{
         /* Styles CSS directement dans le fichier HTML */
         .rectangle {
             position: relative; /* Ajoutez une position relative pour positionner les divs enfants */
-            width: 75em; /* Définissez la largeur du rectangle */
-            height: 23em; /* Définissez la hauteur du rectangle */
+            width: auto; /* Définissez la largeur du rectangle */
+            min-height: 23em; /* Définissez la hauteur du rectangle */
             background-color: #6524ce; /* Définissez la couleur de fond du rectangle */
             text-align: center; /* Centrez le texte à l'intérieur du rectangle */
             color: #fff; /* Définissez la couleur du texte */
             line-height: 50px; /* Ajustez la hauteur de ligne pour centrer le texte verticalement */
             margin: 0 auto ; /* Centrez horizontalement avec un écart de 30px du haut */
             border-radius: 20px; /* Ajoutez des coins arrondis avec un rayon de 20 pixels */
+            margin-right: 20%;
+            margin-left: 20%;
         }
 
         /* Styles pour les boutons à l'intérieur du rectangle */
@@ -257,11 +259,9 @@ h1{
         /* Styles pour les divs de contenu */
         .content {
             display: none; /* Cachez initialement tous les contenus */
-            position: absolute; /* Utilisez une position absolue pour les positionner par rapport au rectangle */
             top: 50%; /* Placez le haut du contenu au centre du bouton */
             left: 0;
             right: 0;
-            transform: translateY(-50%); /* Ajustez pour centrer verticalement le contenu */
             text-align: center; /* Alignez le texte au centre */
             padding: 20px; /* Ajoutez un peu de rembourrage pour plus de lisibilité */
         }
