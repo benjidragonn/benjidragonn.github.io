@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//--------- Partie 4 Réalisation --------------
+//--------- Partie 3 Compétences --------------
 
 function showContent(contentId) {
   // Masquer le message lorsqu'un bouton est cliqué

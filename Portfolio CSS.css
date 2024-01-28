@@ -304,7 +304,6 @@ h1{
     }
 
     .box {
-        height: 500px;
         flex: 1;
         padding: 15px;
         background-color: rgb(11, 11, 39);
@@ -330,7 +329,6 @@ h1{
     /* ----- Réalisation 1 ----- */
 
     .image-container {
-            position: relative;
             display: inline-block;
             width: 100%;
             overflow: hidden; /* Ajout de la propriété overflow pour cacher le débordement de l'image */
@@ -355,8 +353,6 @@ h1{
         text-align: center;
         padding: 15px;
         position: relative;
-        top: 25%;
-        transform: translateY(-50%);
     }
 
 
