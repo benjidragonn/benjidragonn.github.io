@@ -266,6 +266,7 @@ h1{
             padding: 20px; /* Ajoutez un peu de rembourrage pour plus de lisibilité */
         }
 
+
         /* Affichez le contenu spécifique lorsque le div a la classe active */
         .content.active {
             display: block;
@@ -282,6 +283,7 @@ h1{
             border-radius: 35% 65% 47% 53% / 50% 58% 42% 50% ;
             position: relative; /* Ajoutez une position relative pour positionner les divs enfants */
         }
+
 
         .contenu-code button { background-color: #ce6d24; }
         .contenu-competences button { background-color: #57e9df; }
