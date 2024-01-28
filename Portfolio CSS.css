@@ -419,28 +419,13 @@ footer {
     padding: 20px;
 }
 
-.footer-right {
-    width: -45%;
-}
-
-.footer-left {
-    width: 45%;
-}
 
 h4 {
     font-size: 1.2em; /* Taille du texte pour les titres (ajustez selon vos préférences) */
 }
 
-.footer-right a {
-    color: inherit; /* Couleur du texte héritée du parent (noir) */
-    text-decoration: none; /* Supprimer le soulignement */
-}
-
-.footer-right a:hover {
-    text-decoration: underline; /* Soulignement au survol */
-}
-
 .footer-center {
     text-align: center;
     padding-bottom: 1em;
+    padding-top: 1em;
 }
