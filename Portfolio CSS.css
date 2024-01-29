@@ -358,7 +358,7 @@ h1{
     }
 
 
-    .image-container:hover .overlay {
+    .box:hover .overlay {
         height: 100%;
     }
 
