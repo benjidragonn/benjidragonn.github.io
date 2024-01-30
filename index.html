@@ -5,184 +5,185 @@
     <meta charset="UTF-8" />
     <title>Portfolio  Benjamin</title>
     <link href="Portfolio CSS.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
 
-<!-- Contenu de l'overlay -->
-<span id="présentation"></span>
-<div class="overlay-haut">
+    <body>
 
-    <section class="top-nav">
-        <div>
-            <h1>Portfolio</h1>
+        <!-- Contenu de l'overlay -->
+        <span id="présentation"></span>
+        <div class="overlay-haut">
+        
+            <section class="top-nav">
+                <div>
+                    <h1>Portfolio</h1>
+                </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+        
+            <ul class="menu">
+                <li><a href="#présentation">Présentation</a></li>
+                <li><a href="#competences">Competences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a id="openBtn">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </section>
         </div>
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-    </label>
-
-    <ul class="menu">
-        <li><a href="#présentation">Présentation</a></li>
-        <li><a href="#competences">Competences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a id="openBtn">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    </section>
-</div>
-
-
-<!-- Modal CV -->
-
-<div id="pdfModal" class="modal">
-    <span class="close" id="closeBtn">&times;</span>
-        <div class="modal-content">
-        <iframe id="pdfViewer" src="CV Dev.pdf" width="100%" height="100%"></iframe>
-    </div>
-</div>
-
-
-<!-- Partie 1 Arrière plan -->
-
-<div class="hauteur-contenu">
-<div class="gradient-background">
-
-
-<!-- Partie 2 Présentation -->
-
-    <br>
-    <section>
-    <div class="presentation">
-        <h2>
-            <p>Je me présente,</p>
-            <p>Je suis un graphisme de pation, et je m'instruis du monde du code, ce qui me fascine.</p>
-            <p>Depuis plus d'un an je suis sur les résaux pour faire du streaming, et des vidéo qui fait recour à de la communication, que je trouve super intéréssant.</p>
-            <p>Avant de me réorienté, j'étais dessinateur procheteur. J'ai eu mon Bac Pro et un BTS, j'étais parti pour une Licence IME, mais aucune entreprise m'as accepté ou avait de la place.</p>
-            <p>Après mes études, j'ai continué dans la voie de dessinateur procheteur pendant 6 mois.</p>
-            <p>Par la suite, j'ai voulu découvrir d'autres horizons sur d'autres métiers qui pourraient me plaire.</p>
-            <p>J'ai connu des personnes sur internet qui faisaient des sites et du code. Ça m'a fasciné, et je leur ai demandé de m'apprendre le code, et depuis juillet 2023, je m'exerce dessus.</p>
-<span id="competences"></span>  
-        </h2>
-    </div>
-    </section> 
-    <br>
-    
-
-
-<!-- Partie 3 competences -->
-
-<section>
-<div class="rectangle">
-    <div class="type">
-        <!-- Le contenu à l'intérieur du rectangle -->
-        <button class="code" onclick="showContent('code')">Code</button>
-        <button class="competences" onclick="showContent('competences')">Compétences</button>
-        <button class="logiciel" onclick="showContent('logiciel')">Logiciel</button>
-        <div id="message">Cliquez sur les boutons pour faire apparaître</div>
-    </div>
-    <!-- Divs de contenu pour chaque bouton -->
-
-    <!-- Contenu spécifique au bouton Code -->
-    <div id="codeContent" class="content">
-        <div class="contenu-code">
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JS</button>
-            <button>PHP</button>
+        
+        
+        <!-- Modal CV -->
+        
+        <div id="pdfModal" class="modal">
+          <span class="close" id="closeBtn">&times;</span>
+              <div class="modal-content">
+              <iframe id="pdfViewer" src="CV Dev.pdf" width="100%" height="100%"></iframe>
+          </div>
         </div>
-    </div>
-
-    <!-- Contenu spécifique au bouton Compétences -->
-    <div id="competencesContent" class="content">
-        <div class="contenu-competences">
-            <button>Gestion de documents</button>
-            <button>Recherche d'informations</button>
-            <button>dessin papier</button>
-            <button>dessin technique</button>
-            <button>Gestion de projet</button>
-            <button>Assemblage de matériel informatique</button>
-            <button>Modélisation 3D</button>
-            <button>Impression 3D</button>
-            <button>Mesure de précision</button>
+        
+        
+        <!-- Partie 1 Arrière plan -->
+        
+        <div class="hauteur-contenu">
+          <div class="gradient-background">
+          
+        <!-- Partie 2 Présentation -->
+        
+        <br>
+        <section>
+        <div class="presentation">
+            <h2>
+                <p>Je me présente,</p>
+                <p>Je suis un graphisme de pation, et je m'instruis du monde du code, ce qui me fascine.</p>
+                <p>Depuis plus d'un an je suis sur les résaux pour faire du streaming, et des vidéo qui fait recour à de la communication, que je trouve super intéréssant.</p>
+                <p>Avant de me réorienté, j'étais dessinateur procheteur. J'ai eu mon Bac Pro et un BTS, j'étais parti pour une Licence IME, mais aucune entreprise m'as accepté ou avait de la place.</p>
+                <p>Après mes études, j'ai continué dans la voie de dessinateur procheteur pendant 6 mois.</p>
+                <p>Par la suite, j'ai voulu découvrir d'autres horizons sur d'autres métiers qui pourraient me plaire.</p>
+                <p>J'ai connu des personnes sur internet qui faisaient des sites et du code. Ça m'a fasciné, et je leur ai demandé de m'apprendre le code, et depuis juillet 2023, je m'exerce dessus.</p>
+        <span id="competences"></span>  
+            </h2>
         </div>
-    </div>
-
-    <!-- Contenu spécifique au bouton Logiciel -->
-    <div id="logicielContent" class="content">
-        <div class="contenu-logiciel">
-            <button>Paint Tool SAI</button>
-            <button>Krita</button>
-            <button>Adobe Ilustrator</button>
-            <button>Adobe Photoshop</button>
-            <button>Microsoft Office</button>
-            <button>Microsoft Word</button>
-            <button>Microsoft Excel</button>
-            <button>Microsoft PowerPoint</button>
-            <button>SOLIDWORKS</button>
-            <button>CATIA</button>
-            <button>Autodesk Inventor</button>
-        </div>
-    </div>
-</div>
-</section>
-
-<!-- Partie 4 Réalisation -->
-<span id="projets"></span>
-<section>
-        <div class="container">
-            <div class="box">
-                <p>Réalisation 1</p>
-                <p>Réalisation d'un Overlay, pour présenté des résaux en mouvement.</p>
-                <p>(Ci-dessous nous avons un GIF représentant en majorité la réalisation)</p>
-                <br>
-                <div class="image-container">
-                    <img class="img-projet1"src="Image défilent.gif" alt="GIF animé">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <u><p>Projet 1</p></u>
-                            <p>- Il doit comporter 4 images.</p>
-                            <p>- Faire une translation vers le haut en Y</p>
-                            <p>- La translation doit être représentée sans fin</p>
-                            <p>- Code utilisé : HTML ; CSS ; JS</p>
+        </section> 
+        <br>
+        
+        
+        <!-- Partie 3 competences -->
+        
+        <section>
+          <div class="rectangle">
+              <div class="type">
+                  <!-- Le contenu à l'intérieur du rectangle -->
+                  <button class="code" onclick="showContent('code')">Code</button>
+                  <button class="competences" onclick="showContent('competences')">Compétences</button>
+                  <button class="logiciel" onclick="showContent('logiciel')">Logiciel</button>
+                  <div id="message">Cliquez sur les boutons pour faire apparaître</div>
+              </div>
+              <!-- Divs de contenu pour chaque bouton -->
+          
+              <!-- Contenu spécifique au bouton Code -->
+              <div id="codeContent" class="content">
+                  <div class="contenu-code">
+                      <button>HTML</button>
+                      <button>CSS</button>
+                      <button>JS</button>
+                      <button>PHP</button>
+                  </div>
+              </div>
+          
+              <!-- Contenu spécifique au bouton Compétences -->
+              <div id="competencesContent" class="content">
+                  <div class="contenu-competences">
+                      <button>Gestion de documents</button>
+                      <button>Recherche d'informations</button>
+                      <button>dessin papier</button>
+                      <button>dessin technique</button>
+                      <button>Gestion de projet</button>
+                      <button>Assemblage de matériel informatique</button>
+                      <button>Modélisation 3D</button>
+                      <button>Impression 3D</button>
+                      <button>Mesure de précision</button>
+                  </div>
+              </div>
+          
+              <!-- Contenu spécifique au bouton Logiciel -->
+              <div id="logicielContent" class="content">
+                  <div class="contenu-logiciel">
+                      <button>Paint Tool SAI</button>
+                      <button>Krita</button>
+                      <button>Adobe Ilustrator</button>
+                      <button>Adobe Photoshop</button>
+                      <button>Microsoft Office</button>
+                      <button>Microsoft Word</button>
+                      <button>Microsoft Excel</button>
+                      <button>Microsoft PowerPoint</button>
+                      <button>SOLIDWORKS</button>
+                      <button>CATIA</button>
+                      <button>Autodesk Inventor</button>
+                  </div>
+              </div>
+          </div>
+          </section>
+          
+        <!-- Partie 4 Réalisation -->
+        <span id="projets"></span>
+        <section>
+                <div class="container">
+                    <div class="box">
+                        <p>Réalisation 1</p>
+                        <p>Réalisation d'un Overlay, pour présenté des résaux en mouvement.</p>
+                        <p>(Ci-dessous nous avons un GIF représentant en majorité la réalisation)</p>
+                        <br>
+                        <div class="image-container">
+                            <img class="img-projet1"src="Image défilent.gif" alt="GIF animé">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <u><p>Projet 1</p></u>
+                                    <p>- Il doit comporter 4 images.</p>
+                                    <p>- Faire une translation vers le haut en Y</p>
+                                    <p>- La translation doit être représentée sans fin</p>
+                                    <p>- Code utilisé : HTML ; CSS ; JS</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="box">
+                        <p>Réalisation 2</p>
+                        <u><p>Projet</u> :</p>
+                        <p>- Réalisation d'un site</p>
+                    </div>                
+                    <div class="box">
+                        <p>Réalisation 3</p>
+                        <u><p>Projet</u> :</p>
+                        <p>- En préparation</p>
+                        <p>- Travail en groupe</p>
+                    </div>
+                    <div class="box">
+                        <p>Réalisation 4</p>
+                        <u><p>Projet</u> :</p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <p>Réalisation 2</p>
-                <u><p>Projet</u> :</p>
-                <p>- Réalisation d'un site</p>
-            </div>                
-            <div class="box">
-                <p>Réalisation 3</p>
-                <u><p>Projet</u> :</p>
-                <p>- En préparation</p>
-                <p>- Travail en groupe</p>
-            </div>
-            <div class="box">
-                <p>Réalisation 4</p>
-                <u><p>Projet</u> :</p>
-            </div>
+        </section>
+        
+        
+          </div>
         </div>
-</section>
+        </body>
+        
+        <!-- Fin partie 1 arrière -->
+        
+        
+        <!-- Bas de page -->
+        
+        <footer>
+          <div class="footer-center">
+              <p>- © 2024</p>
+          </div>
+        </footer>
+        <section id="contact"></section>
+        
 
-</div>
-</div>
-</body>
-
-<!-- Fin partie 1 arrière -->
-
-
-<!-- Bas de page -->
-
-<footer>
-        <div class="footer-center">
-            <p>- © 2024</p>
-        </div>
-</footer>
-<section id="contact"></section>
 <script src="script.js"></script>
 
 </html>

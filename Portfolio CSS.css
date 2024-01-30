@@ -1,5 +1,3 @@
-
-
 html{
     height: 100%;
     margin: 0;
@@ -301,10 +299,9 @@ body {
     }
 
 
-
 /* ----- Partie 2 Présentation ----- */
 
-    .presentation{
+.presentation{
         width: 60%;
     }
 
@@ -318,9 +315,7 @@ body {
         font-size : 2 px;
     }
 
-
-
-/* ----- Partie 3 competences ----- */
+    /* ----- Partie 3 competences ----- */
 
         /* Styles CSS directement dans le fichier HTML */
         .rectangle {
@@ -398,11 +393,9 @@ body {
             background-color: #0a46c884; /* Changez la couleur de fond du bouton actif */
         }
 
-
-
 /* ----- Partie 4 Réalisation ----- */
 
-    .container {
+.container {
         display: flex;
         justify-content: space-between;
         padding: 20px;
@@ -430,11 +423,9 @@ body {
         transform: scale(1.1);
     }
 
+        /* ----- Réalisation 1 ----- */
 
-
-    /* ----- Réalisation 1 ----- */
-
-    .image-container {
+        .image-container {
             display: inline-block;
             width: 100%;
             overflow: hidden; /* Ajout de la propriété overflow pour cacher le débordement de l'image */
@@ -503,10 +494,7 @@ body {
         }
     }
 
-
-
-
-/* ----- Footer ----- */
+    /* ----- Footer ----- */
 
 footer {
     background-color: #333;
