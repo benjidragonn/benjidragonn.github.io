@@ -98,69 +98,173 @@ body {
     align-items: center; /* Aligner les éléments verticalement au centre */
     z-index: 20;
   }
-  .contenu-portfolio {
-    display: flex;
-    justify-content: space-between;
-}
 
-h1{
-    margin-top: 0;
-    margin-left: 100px;
-    padding: 15px 0;
-    color: #1d1c1c;
-    text-shadow: 2px 0px 1px rgb(0, 0, 0);
-}
 
 
 /* ----- Barre de navigation ----- */
 
-    nav {
-        position: relative;
-        top: 0;
-        left: 5em;
-        width: 100%;
-        text-align: center;
-        z-index: 1000;
+* {
+    font-family: "Raleway";
+    box-sizing: border-box;
+  }
+  
+  h1{
+    color: #1d1c1c;
+    text-shadow: 2px 0px 1px rgb(0, 0, 0);
+}
+
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #000000;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 1175px) {
+    .menu-button-container {
+      display: flex;
     }
-    nav li
-    {
-        list-style-type: none;
-        float: left;
-        transition: 0.2s;
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      margin-left: 35%;
     }
-
-    nav a
-    {
-        display: inline-block;
-        text-decoration: none;
-        padding: 10px 105px;
-        font-weight: 600;
-        color: #a69db4;
-        transition: 0.2s;
-
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
-
-    nav ul
-    {
-        margin-left: 1px;
-        margin-right: 1px;
-        padding: 0px;
-        overflow: hidden;
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      width: 60%;
+      background-color: #444;
+      margin-right: 5px;
     }
-
-    nav li:hover
-    {
-        background-color:#e6d7ff ;
-        transition: 0.2s;
-
+  
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: rgb(0, 0, 0);
+      background-color: #222;
     }
-
-    nav li:hover a
-    {
-        color: blueviolet;
-        transition: 0.2s;
-
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
     }
+  }
+  
+
+    .top-nav a
+      {
+          display: inline-block;
+          text-decoration: none;
+          padding: 10px 105px;
+          font-weight: 600;
+          color: #a69db4;
+          transition: 0.2s;
+  
+      }
+  
+      .top-nav ul
+      {
+  
+          margin-right: 1px;
+          padding: 0px;
+          overflow: hidden;
+      }
+  
+      
+      .top-nav li:hover
+      {
+          background-color:#e6d7ff ;
+          transition: 0.2s;
+      }
+  
+      .top-nav li:hover a
+      {
+          color: blueviolet;
+          transition: 0.2s;
+      }
+  
 
 
     #présentation {
@@ -189,7 +293,7 @@ h1{
 
     .hauteur-contenu {
         /* Ajoutez du padding en haut pour éviter que le contenu soit caché derrière l'overlay */
-        padding-top: 50px; /* Ajustez selon vos besoins */
+        padding-top: 0; /* Ajustez selon vos besoins */
     }
 
     .gradient-background {
