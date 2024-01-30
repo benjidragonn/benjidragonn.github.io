@@ -111,6 +111,19 @@ body {
     text-shadow: 2px 0px 1px rgb(0, 0, 0);
 }
 
+.titre {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+}
+    /* Style pour l'image */
+    .titre img {
+        vertical-align: middle; /* Alignement vertical au centre par rapport au texte */
+        width: 50px;
+    }
+
+
+
   .top-nav {
     display: flex;
     flex-direction: row;
@@ -313,7 +326,6 @@ body {
         margin-left: 1em;
         padding: 20px 0;
         color: #ffffff;
-        text-shadow: 2px 0px 1px rgba(233, 231, 231, 0.445);
         font-size : 2 px;
     }
 
