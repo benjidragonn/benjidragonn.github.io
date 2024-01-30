@@ -341,7 +341,6 @@ body {
             font-size: 25px;
             background-color: #fff;
             color: #000000;
-            border: none;
             border-radius: 30px;
             cursor: pointer;
             position: relative; /* Ajoutez une position relative pour positionner les divs enfants */
@@ -410,6 +409,13 @@ body {
         justify-content: space-between;
         padding: 20px;
         color: #ccc8c8;
+    }
+
+    .logiciel {
+        margin-left: 0;
+    }
+    .code {
+        margin-right: 0;
     }
 }
 
