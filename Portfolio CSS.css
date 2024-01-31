@@ -200,6 +200,9 @@ body {
     transform: rotate(-405deg);
   }
   
+
+
+  
   @media (max-width: 1175px) {
     .menu-button-container {
       display: flex;
@@ -303,6 +306,8 @@ body {
 
 
 
+
+
 /* ----- Partie 1 Arrière plan ----- */
 
     .hauteur-contenu {
@@ -313,6 +318,10 @@ body {
     .gradient-background {
         background: linear-gradient(to bottom, #1624a3, #c494f8);
     }
+
+
+
+
 
 
 /* ----- Partie 2 Présentation ----- */
@@ -328,6 +337,10 @@ body {
         color: #ffffff;
         font-size : 2 px;
     }
+
+
+
+
 
     /* ----- Partie 3 competences ----- */
 
@@ -405,6 +418,8 @@ body {
         .type button.active {
             background-color: #0a46c884; /* Changez la couleur de fond du bouton actif */
         }
+
+
 
 /* ----- Partie 4 Réalisation ----- */
 
