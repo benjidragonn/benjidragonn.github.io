@@ -335,7 +335,7 @@ body {
         margin-left: 1em;
         padding: 20px 0;
         color: #ffffff;
-        font-size : 2 px;
+        font-size : 1,5em;
     }
 
 
@@ -428,6 +428,8 @@ body {
     justify-content: space-between;
     padding: 20px;
     color: #ccc8c8;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 @media (max-width: 720px) {
