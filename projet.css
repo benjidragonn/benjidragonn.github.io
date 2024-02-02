@@ -1,3 +1,41 @@
+html{
+    height: 100%;
+    margin: 0;
+}
+
+/* ----- Body ----- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+}
+
+.overlay-haut {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 0;
+    align-items: center; /* Aligner les éléments verticalement au centre */
+    z-index: 20;
+  }
+
+
+/* ----- Partie 1 Arrière plan ----- */
+
+.hauteur-contenu {
+    /* Ajoutez du padding en haut pour éviter que le contenu soit caché derrière l'overlay */
+    padding-top: 2em; /* Ajustez selon vos besoins */
+}
+
+.gradient-background {
+    background: linear-gradient(to bottom, #1624a3, #c494f8);
+}
+
+
 /* ----- Partie 4 Réalisation ----- */
 
 .container {

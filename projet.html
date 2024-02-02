@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
     <title>Projet</title>
     <link href="projet.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
 </head>
+
+
 <body>
 
-    <iframe src="http://benjidragonn.github.io/nav.html" frameborder="0"></iframe>
+<!-- Contenu de l'overlay -->
+<span id="présentation"></span>
+<div class="overlay-haut">
+
+    <section class="top-nav">
+        <div class="titre">
+            <img src="logo.png" alt="logo">
+            <h1></h1>
+        </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+
+    <ul class="menu">
+        <li><a href="http://127.0.0.1:5500/benjidragonn.github.io/index.html">Présentation</a></li>
+        <li><a href="#competences">Competences</a></li>
+        <li><a href="http://127.0.0.1:5500/benjidragonn.github.io/projet.html">Projets</a></li>
+        <!-- <li><a id="openBtn">CV</a></li> -->
+    </ul>
+    </section>
+</div>
+
+    <!-- Partie 1 Arrière plan -->
+        
+    <div class="hauteur-contenu">
+        <div class="gradient-background">
+        
     <!-- Partie 4 Réalisation -->
     <span id="projets"></span>
     <section>
@@ -94,6 +125,8 @@
                 </div>
             </div>
     </section>
+        </div>
+    </div>
 
     <script src="projet.js"></script>
 
