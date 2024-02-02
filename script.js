@@ -62,3 +62,7 @@ function showContent(contentId) {
   activeButton.classList.add('active');
   activeButton.style.color = '#ffffff'; // Changer la couleur du texte en blanc
 }
+
+ // Carousels
+
+ 
