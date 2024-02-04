@@ -7,15 +7,22 @@
     <style>
 body {
   margin: 0;
-  background: lightgray;
+  margin-left: 35px;
   text-align: center;
   font-family: sans-serif;
   color: #fefefe;
 }
+
+@media (max-width: 1175px) {
+    body {
+    margin-left: 0;
+  }
+}
+
 .container {
   position: relative;
-  width: 320px;
-  margin: 100px auto 0 auto;
+  width: 300px;
+  margin: 0px auto 0px auto;
   perspective: 1000px;
 }
 
@@ -31,8 +38,6 @@ body {
   width: 300px;
   height: 187px;
   top: 20px;
-  left: 10px;
-  right: 10px;
   background-size: cover;
   box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
   display: flex;

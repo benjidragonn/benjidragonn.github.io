@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
 //--------- Partie 3 Compétences --------------
 
 function showContent(contentId) {
