@@ -172,6 +172,11 @@ body {
         }
     }
 
+
+    h2 {
+        color: #ccc8c8;
+    }
+
 footer {
     background-color: #333;
 }
