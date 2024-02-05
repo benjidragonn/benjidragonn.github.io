@@ -1,201 +1,125 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <title>Portfolio</title>
-    <link href="Portfolio CSS.css" rel="stylesheet">
-    <link href="nav.css" rel="stylesheet">
-    <link href="scroll.css" rel="stylesheet">
+    <title>Accueil</title>
+    <style>
+        
+* {
+  margin:0;
+  padding:0; 
+  box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(to bottom, #1624a3, #c494f8);
+    height: 100%;
+}
+body {
+    transform: translateY(50%);
+    justify-content: center;
+}
+
+
+.buttonac {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.titre {
+    text-align: center;
+}
+
+.titre img {
+    width: 200px;
+    vertical-align: middle; /* Pour centrer verticalement l'image dans le conteneur */
+
+}
+
+.btn {
+  border:0;
+  height: 100px;
+  width: 280px;
+  font-size: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
+  background: #885edd;
+  color: white;
+  transform: rotate(-30deg) skewX(25deg) translate(0, 0);
+  position: relative;
+  transition: all 0.4s;
+  box-shadow: -10px 10px 10px rgba(0,0,0,1);
+}
+
+.btn::before{
+  content:'';
+  position: absolute;
+  top:5px;
+  left:-10px;
+  width:10px;
+  height:100%;
+  background: #4B0082;
+  transform: skewY(-45deg)
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: -5px;
+  width: 100%;
+  height: 10px;
+  background: #4B0082;
+  transform: skewX(-45deg);
+}
+
+.btn:hover{
+  transform: rotate(-30deg) skewX(25deg) translate(20px, -20px);
+  box-shadow: -30px 30px 10px rgba(0,0,0,0.8);
+}
+
+    </style>
 </head>
 
+<body>
 
-    <body>
-
-
-        <!-- Contenu de l'overlay -->
-        <span id="présentation"></span>
-        <div class="overlay-haut">
-        
-            <section class="top-nav">
-                <div class="titre">
-                    <img src="logo.png" alt="logo">
-                    <h1></h1>
-                </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-            </label>
-        
-            <ul class="menu">
-                <li><a href="http://benjidragonn.github.io/index.html">Présentation</a></li>
-                <li><a href="#competences">Competences</a></li>
-                <li><a href="http://benjidragonn.github.io/projet.html">Projets</a></li>
-                <!-- <li><a id="openBtn">CV</a></li> -->
-            </ul>
-            </section>
+        <div class="titre">
+            <img src="logo.png" alt="logo">
+            <h1></h1>
         </div>
-        
-        
-        <!-- Modal CV -->
-        
-        <div id="pdfModal" class="modal">
-            <span class="close" id="closeBtn">&times;</span>
-                <div class="modal-content">
-                <iframe id="pdfViewer" src="CV Dev.pdf" width="100%" height="100%"></iframe>
-                </div>
-        </div>
-        
-        
-        <!-- Partie 1 Arrière plan -->
-        
-        <div class="hauteur-contenu">
-        <div class="gradient-background">
-        
-
-
-
-        <!-- Partie 2 Présentation -->avant
-        
-
-
-        <br>
-        <section>
-        <div class="presentation">
-            <h2>
-                <p>Je me présente,</p>
-                <p>Je suis un graphiste de passion, et je m'instruis du monde du code, ce qui me fascine.</p>
-                <p>Depuis plus d'un an je suis sur les résaux pour faire du streaming, et des vidéo qui fait recour à de la communication, que je trouve super intéréssant.</p>
-                <p>Avant de me réorienté, j'étais dessinateur procheteur. J'ai eu mon Bac Pro et un BTS, j'ai été accepté pour une Licence IME, mais aucune entreprise m'as accepté ou avait de la place.</p>
-                <p>Après mes études, j'ai continué dans la voie de dessinateur procheteur pendant 6 mois.</p>
-                <p>Par la suite, j'ai voulu découvrir d'autres horizons sur d'autres métiers qui pourraient me plaire.</p>
-                <p>J'ai connu des personnes sur internet qui faisaient des sites et du code. Ça m'a fasciné, et je leur ai demandé de m'apprendre le code, et depuis juillet 2023, je m'exerce dessus.</p>
-        <span id="competences"></span>  
-            </h2>
-            <div class="button-projet">
-                <iframe class="carousel-3d" src="Test Caroussel.html" frameborder="0"></iframe>
-                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                      <div class="front">
-                        <!-- Image avant -->
-                        <img src="Projet image de fond.png" alt="Image avant">
-                      </div>
-                      <div class="back">
-                        <!-- Fond noir (pas d'image) avec bouton -->
-                        <div class="black-background">
-                          <a href="http://benjidragonn.github.io/projet.html">
-                            <button class="cta">
-                            <span class="span">Accédé à la page projets</span>
-                            <span class="second">
-                              <svg width="50px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                  <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                                  <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                                  <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                                </g>
-                              </svg>
-                            </span> 
-                        </button>
-                        </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        </section> 
-        <br>
-
-        
-
-        <!-- Partie 3 competences -->
-        
-        <section>
-            <div class="rectangle">
-                <div class="type">
-                    <!-- Le contenu à l'intérieur du rectangle -->
-                    <button class="code" onclick="showContent('code')">Code</button>
-                    <button class="competences" onclick="showContent('competences')">Compétences</button>
-                    <button class="logiciel" onclick="showContent('logiciel')">Logiciel</button>
-                    <div id="message">Cliquez sur les boutons pour faire apparaître</div>
-                </div>
-                <!-- Divs de contenu pour chaque bouton -->
-            
-                <!-- Contenu spécifique au bouton Code -->
-                <div id="codeContent" class="content">
-                    <div class="contenu-code">
-                        <div>Codage utilisé</div>
-                            <button>HTML</button>
-                            <button>CSS</button>
-                            <button>JS</button>
-                            <button>PHP</button>
-                    </div>
-                </div>
-
-                <!-- Contenu spécifique au bouton Compétences -->
-                <div id="competencesContent" class="content">
-                    <div class="contenu-competences">
-                        <div>Competences Dessin</div>
-                            <button>dessin papier</button>
-                            <button>dessin numérique</button>
-                            <button>dessin technique</button>
-                        <div>Competences 3D</div>
-                            <button>Modélisation 3D</button>
-                            <button>Impression 3D</button>
-                        <div>Competences Professionnel</div>
-                            <button>Gestion de projet</button>
-                            <button>Gestion de documents</button>
-                            <button>Recherche d'informations</button>
-                            <button>Assemblage de matériel informatique</button>
-                            <button>Mesure de précision</button>
-                    </div>
-                </div>
-            
-                <!-- Contenu spécifique au bouton Logiciel -->
-                <div id="logicielContent" class="content">
-                    <div class="contenu-logiciel">
-                        <div>Logiciel Dessin</div>
-                            <button>Paint Tool SAI</button>
-                            <button>Krita</button>
-                            <button>Adobe Ilustrator</button>
-                            <button>Adobe Photoshop</button>    
-                        <div>Logiciel 3D</div>
-                            <button>SOLIDWORKS</button>
-                            <button>CATIA</button>
-                            <button>Autodesk Inventor</button>
-                        <div>Logiciel Burreau</div>
-                            <button>Microsoft Office</button>
-                            <button>Microsoft Word</button>
-                            <button>Microsoft Excel</button>
-                            <button>Microsoft PowerPoint</button>
-                            <button>Libre office</button>
-                        <div>Logiciel Vidéo</div>
-                            <button>Adobe Première Pro</button>
-                            <button>DaVinci Resolve</button>
-                            <button>CapCut</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <footer>
-            <iframe src="footer.html" height="170px" width="100%" frameborder="0"></iframe>
-        </footer>
-
-        </div>
+        <div class="buttonac">
+            <a href="https://benjidragonn.github.io/presentation.html"><button class='btn'>Présentation</button></a>
+            <a href="https://benjidragonn.github.io/index.html"><button class='btn'>Compétences</button></a>
+            <a href="https://benjidragonn.github.io/projet.html"><button class='btn'>Projets</button></a>
         </div>
 
-        <script src="script.js"></script>
+</body>
 
-    </body>
-
-        <!-- Fin partie 1 arrière -->
-        
-        
-        <!-- Bas de page -->
-        
-
-
+<script>
+    const carousel = document.querySelector('.carousel');
+    const items = carousel.children;
+  
+    let index = 0;
+  
+    function showItem() {
+      // Masquer tous les éléments
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.display = 'none';
+      }
+  
+      // Afficher l'élément actuel
+      items[index].style.display = 'block';
+  
+      // Passer à l'élément suivant
+      index = (index + 1) % items.length;
+    }
+  
+    // Afficher le premier élément
+    showItem();
+  
+    // Définir l'intervalle de 5 secondes
+    setInterval(showItem, 5000);
+  </script>
 </html>
