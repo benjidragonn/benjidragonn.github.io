@@ -105,7 +105,7 @@ body {
     }
 
 .button-projet {
-    margin-left: 50px;
+    margin-left: 250px;
 }
 
 .button-projet img {
@@ -122,13 +122,13 @@ body {
 
 .carousel-3d {
     margin-top: 40px;
-    height: 300px;
+    height: 220px;
     width: 450px;
 }
 
 
 
-    @media (max-width: 1175px) {
+    @media (max-width: 800px) {
         .presentation{
             width: 100%;
             display: contents;
@@ -147,7 +147,7 @@ body {
     }
 
     h2{
-        width: 60%;
+        width: 45%;
         margin-top: 20px;
         text-align: left;
         margin-left: 3em;
@@ -316,11 +316,11 @@ body {
             color: #fff; /* Définissez la couleur du texte */
             line-height: 50px; /* Ajustez la hauteur de ligne pour centrer le texte verticalement */
             margin: 0 auto ; /* Centrez horizontalement avec un écart de 30px du haut */
-            border-radius: 20px; /* Ajoutez des coins arrondis avec un rayon de 20 pixels */
+            border-radius: 200px; /* Ajoutez des coins arrondis avec un rayon de 20 pixels */
             margin-right: 10%;
             margin-left: 10%;
             margin-bottom: 1em;
-            margin-top: 80px;
+            margin-top: 0;
         }
 
         /* Styles pour les boutons à l'intérieur du rectangle */
@@ -385,7 +385,7 @@ body {
 
 
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
 
     .rectangle {
         margin-top: 0;
