@@ -11,8 +11,6 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden; /* Empêche la barre de défilement horizontale */
-    background: linear-gradient(to bottom, #1624a3, #c494f8);
-
 }
 
 
@@ -32,15 +30,19 @@ body {
 
   .hauteur-contenu {
     /* Ajoutez du padding en haut pour éviter que le contenu soit caché derrière l'overlay */
-    padding-top: 100px; /* Ajustez selon vos besoins */
+    padding-top: 50px; /* Ajustez selon vos besoins */
     padding-bottom: 20px;
+    background: linear-gradient(to bottom, #1624a3, #c494f8);
 }
 
-@media (max-width: 720px) {
-    .rangée-1, .rangée-2 {
-        display: grid; 
-    }
+
+.titre-haut {
+  text-align: center;
+  color: white;
 }
+
+
+
 
 
 
@@ -48,7 +50,16 @@ body {
 
 .rangée-1, .rangée-2 {
     display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+}
 
+@media (max-width: 720px) {
+  .rangée-1.media-query-rangées,
+  .rangée-2.media-query-rangées {
+      display: grid;
+      /* Ajoutez les propriétés grid nécessaires selon vos besoins */
+  }
 }
 
 .card {
@@ -224,4 +235,8 @@ body {
     100% {
       transform: translateY(0px);
     }
+  }
+
+  footer {
+    background-color: #333;
   }
