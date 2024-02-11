@@ -46,6 +46,7 @@ body {
   /* ----- Partie 2 Cartes ----- */
 
 .rangée-1, .rangée-2 {
+  position: relative;
     display: flex;
     justify-content: center; /* Centre les éléments horizontalement */
     align-items: center; /* Centre les éléments verticalement */
