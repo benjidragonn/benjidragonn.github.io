@@ -37,13 +37,10 @@ body {
 
 
 .titre-haut {
+  position: relative;
   text-align: center;
   color: white;
 }
-
-
-
-
 
 
   /* ----- Partie 2 Cartes ----- */
@@ -246,5 +243,6 @@ body {
   }
 
   footer {
+    position: relative;
     background-color: #333;
   }

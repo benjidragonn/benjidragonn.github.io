@@ -39,6 +39,7 @@ body {
 /* ----- Partie 2 Réalisation ----- */
 
 .container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -178,5 +179,6 @@ body {
     }
 
 footer {
+    position: relative;
     background-color: #333;
 }

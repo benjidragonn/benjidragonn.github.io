@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
     <title>Accueil</title>
+    <link href="fond.css" rel="stylesheet">
     <style>
         
 * {
@@ -16,11 +17,15 @@ html {
     background: linear-gradient(to bottom, #1624a3, #c494f8);
     height: 100%;
 }
+
 body {
-    transform: translateY(50%);
     justify-content: center;
 }
 
+.content {
+  transform: translateY(50%);
+  height: 100%;
+}
 
 .buttonac {
     display: flex;
@@ -30,7 +35,7 @@ body {
 }
 
 @media (max-width: 720px) {
-    body {
+    .content {
       transform: translateY(0);
     }
     .buttonac {
@@ -42,13 +47,13 @@ body {
 }
 
 .titre {
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .titre img {
     width: 200px;
     vertical-align: middle; /* Pour centrer verticalement l'image dans le conteneur */
-
 }
 
 .btn {
@@ -98,6 +103,28 @@ body {
 
 <body>
 
+  <!-- Fon d'écran -->
+
+  <div class="wrapper">
+    <div class="carre">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+
+
+  <!-- Contenu -->
+  
+      <div class="content">
         <div class="titre">
             <img src="logo.png" alt="logo">
             <h1></h1>
@@ -107,6 +134,7 @@ body {
             <a href="https://benjidragonn.github.io/competences.html"><button class='btn'>Compétences</button></a>
             <a href="https://benjidragonn.github.io/projet.html"><button class='btn'>Projets</button></a>
         </div>
+      </div>
 
 </body>
 
