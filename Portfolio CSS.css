@@ -171,6 +171,7 @@ body {
     /* ----- Image flip ----- */
 
     .flip-container {
+      position: relative;
         perspective: 1000px;
         width: 300px; /* Ajustez la taille selon vos besoins */
         height: 300px;
