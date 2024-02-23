@@ -1,10 +1,12 @@
+
+
 html{
     height: 100%;
     margin: 0;
 }
 
 
-/* ----- CV -----*/
+/* ----- def -----*/
 
 .modal-container {
   display: none;
@@ -33,7 +35,7 @@ html{
   top: 10px;
   right: 10px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
   color: red;
 }
 
@@ -44,9 +46,9 @@ html{
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden; /* Empêche la barre de défilement horizontale */
 }
+
 
 
   .overlay-haut {
@@ -72,13 +74,19 @@ body {
         padding-top: 0; /* Ajustez selon vos besoins */
     }
 
-    .gradient-background {
-        height: 100%;
-        background: linear-gradient(to bottom, #1624a3, #c494f8);
+
+
+
+    .haut {
+      text-align: center;
+      font-size: 25px;
+      background-color: #282fab;
+      border: 1px #15007f solid;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      color: white;
     }
-
-
-
 
 
 
@@ -89,7 +97,16 @@ body {
   position: sticky;
 }
 
-.contour {
+.presentation {
+  width: 90%;
+  margin-left: 3em;
+  }
+
+.presentation-1, .presentation-2 {
+  display: flex;
+}
+
+.contour-g {
   font-size: 25px;
   background-color: rgba(0, 0, 0, 0.119);
   border-left: 5px #13005f solid;
@@ -98,31 +115,32 @@ body {
   margin-bottom: 20px;
 }
 
-.contour button {
-  font-size: 1em;
-  background-color: #6225E6;
-  border-radius: 5px;
-  cursor: pointer;
+.carousel {
+  align-items: center;
 }
 
-.presentation {
-    width: 90%;
-    display: flex;
-    margin-left: 3em;
-    }
+.contour-d {
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.119);
+  border-right: 5px #13005f solid;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 1em;
+  right: 0;
+}
+
 
   #contenuModal {
     font-size: 1.5em;
   }
 
 .button-projet {
-    margin-left: 250px;
+    margin-left: 0;
 }
 
 .button-projet img {
-    width: 400px;
-    margin: 10px;
-    
+    width: 400px;    
 }
 
 .button-projet a {
@@ -144,6 +162,14 @@ body {
             width: 80%;
             display: contents;
         }
+        .presentation{
+          width: 80%;
+          display: contents;
+        }
+        .presentation-1, .presentation-2 {
+          display: contents;
+        }
+
         .carousel-3d {
             margin-top: 0;
             width: 100%;
@@ -153,7 +179,6 @@ body {
         }
         .button-projet img {
             width: 90%;
-            margin: 10px;
     }
     h2 {
       margin-left: 1.5em;
@@ -174,11 +199,18 @@ body {
     /* ----- Image flip ----- */
 
     .flip-container {
-      position: relative;
+        position: relative;
         perspective: 1000px;
-        width: 300px; /* Ajustez la taille selon vos besoins */
-        height: 300px;
-        
+        width: 400px;
+        height: 355px;
+        margin-bottom: 1em;
+      }
+
+      @media (max-width: 485px) {
+        .flip-container {
+          width: 100%;
+          margin-bottom: 0;
+        }
       }
       
       .flipper {
@@ -206,7 +238,7 @@ body {
 
       .front img {
         border-radius: 30px;
-
+        width: 100%;
       }
       
       .back {
@@ -231,6 +263,26 @@ body {
         cursor: pointer;
       }
 
+    /* ----- Domaines ----- */
+
+    .domaines {
+      text-align: center;
+      font-size: 25px;
+      background-color: rgba(0, 0, 0, 0.119);
+      border: 5px #13005f solid;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .domaines button {
+      font-size: 1em;
+      background-color: #6225E6;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 1em;
+    }
+    
     /* ----- Button Page Suivante ----- */
 
 
@@ -259,7 +311,6 @@ body {
         display: flex;
         padding: 11px 33px;
         text-decoration: none;
-        font-family: 'Poppins', sans-serif;
         font-size: 25px;
         color: white;
         background: #6225E6;

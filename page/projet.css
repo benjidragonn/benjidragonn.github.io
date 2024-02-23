@@ -8,7 +8,6 @@ html{
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     overflow-x: hidden; /* Empêche la barre de défilement horizontale */
 }
 
@@ -21,7 +20,7 @@ body {
     padding: 0;
     align-items: center; /* Aligner les éléments verticalement au centre */
     z-index: 20;
-  }
+}
 
 
 /* ----- Partie 1 Arrière plan ----- */

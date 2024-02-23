@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//--------- CV Définition --------------
+//--------- Définition --------------
 
 function afficherModal(contenu) {
   var modalContainer = document.querySelector('.modal-container');
