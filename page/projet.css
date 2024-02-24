@@ -35,6 +35,15 @@ body {
 }
 
 
+.titre-haut {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+
+  }
+
+
 /* ----- Partie 2 Réalisation ----- */
 
 .container {

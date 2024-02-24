@@ -184,6 +184,9 @@ body {
       margin-left: 1.5em;
       width: 80%;
     }
+    .contour-d {
+      margin-left: 0;
+    }
   }
 
     h2{
@@ -214,7 +217,7 @@ body {
       }
       
       .flipper {
-        transition: 0.6s;
+        transition: 0.4s;
         transform-style: preserve-3d;
         position: relative;
       }
@@ -246,7 +249,7 @@ body {
       }
       
       .black-background {
-        width: 350px;
+        width: 100%;
         height: 350px;
         display: flex;
         align-items: center;
@@ -265,22 +268,36 @@ body {
 
     /* ----- Domaines ----- */
 
+
     .domaines {
+      width: 50%;
       text-align: center;
       font-size: 25px;
-      background-color: rgba(0, 0, 0, 0.119);
-      border: 5px #13005f solid;
+      background-color: rgba(0, 0, 0, 0.219);
+      border: 5px #5959597d solid;
       padding: 10px;
       border-radius: 10px;
       margin-bottom: 20px;
+      transform: translatex(50%);
     }
+
+    @media (max-width: 800px) {
+      .domaines {
+        width: 100%;
+        padding: 10px;
+        transform: translatex(0);
+      }
+    }
+
 
     .domaines button {
       font-size: 1em;
-      background-color: #6225E6;
+      background-color: #110f49;
       border-radius: 5px;
       cursor: pointer;
       margin-bottom: 1em;
+      color: white;
+      padding: 8px;
     }
     
     /* ----- Button Page Suivante ----- */
