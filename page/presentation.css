@@ -117,6 +117,7 @@ body {
 
 .carousel {
   align-items: center;
+  margin: 0;
 }
 
 .contour-d {
