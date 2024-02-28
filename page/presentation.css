@@ -118,6 +118,7 @@ body {
 .carousel {
   align-items: center;
   margin: 0;
+  overflow: hidden;
 }
 
 .contour-d {
@@ -275,7 +276,7 @@ body {
       text-align: center;
       font-size: 25px;
       background-color: rgba(0, 0, 0, 0.219);
-      border: 5px #5959597d solid;
+      border: 5px #13005f solid;
       padding: 10px;
       border-radius: 10px;
       margin-bottom: 20px;
