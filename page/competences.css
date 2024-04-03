@@ -31,7 +31,6 @@ body {
   .hauteur-contenu {
     /* Ajoutez du padding en haut pour éviter que le contenu soit caché derrière l'overlay */
     padding-top: 50px; /* Ajustez selon vos besoins */
-    padding-bottom: 20px;
     background: linear-gradient(to bottom, #1624a3, #c494f8);
 }
 
@@ -255,7 +254,7 @@ body {
       justify-content: center;
       text-align: center;
       border-radius: 30px;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
       padding-top: 30px;
     }
 
@@ -353,7 +352,30 @@ body {
         }
       }
 
-  footer {
-    position: relative;
-    background-color: #333;
+    /* ----- Footer ----- */
+
+    footer {
+      background-color: #333;
+      color:white;
+      position: relative;
+  }
+  
+  .cate-footer {
+      display: flex;
+      flex-wrap: wrap; /* Permet le retour à la ligne si l'espace est insuffisant */
+      justify-content: center; /* Centre les éléments horizontalement */
+  
+      padding: 20px;
+  }
+  
+  
+  h4 {
+      font-size: 1.2em; /* Taille du texte pour les titres (ajustez selon vos préférences) */
+  }
+  
+  .footer-center {
+      text-align: center;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      font-family: "Open Sans", sans-serif;
   }
