@@ -206,7 +206,7 @@ body {
   
       .top-nav li:hover a
       {
-          color: blueviolet;
+          color: rgb(43, 180, 226);
           transition: 0.2s;
       }
   

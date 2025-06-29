@@ -7,9 +7,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #24C6DC; 
-    background: -webkit-linear-gradient(to bottom, #1624a3, #6d4597);  
-    background: linear-gradient(to bottom, #1624a3, #6d4597); 
+    background: linear-gradient(to bottom, #004aaa, #fff); 
   }
   
   .carre div {

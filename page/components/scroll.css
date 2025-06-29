@@ -5,10 +5,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #1d1d1f; /* Couleur de la poignée de défilement */
+    background-color: #ffffff; /* Couleur de la poignée de défilement */
     border-radius: 13px; /* Coins arrondis de la poignée */
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
     width: 8px;
 }
 
