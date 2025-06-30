@@ -352,7 +352,6 @@ body {
       border-radius: 30px;
       padding-bottom: 40px;
       padding-top: 30px;
-      transform: translatex(80%);
     }
 
     .suivante-background button {
@@ -466,17 +465,11 @@ body {
       display: grid;
       /* Ajoutez les propriétés grid nécessaires selon vos besoins */
   }
-
-  .média-carte {
-    display: flex;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
 }
 
 .card {
     overflow: visible;
-    width: 250px;
+    width: 15em;
     height: 400px;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -868,9 +861,15 @@ body {
     width: 25em;
 }
 
+@media (max-width: 720px) {
+  .footer-left {
+    text-align: center;
+  }
+}
+
 
 .A-propos {
-  margin-right: 8em;
+  margin-right: 3em;
 }
 
 .A-propos a {
