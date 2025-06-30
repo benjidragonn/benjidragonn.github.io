@@ -1,24 +1,15 @@
 <!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://tonsite.com/merci.html">
+
 <head>
 <style>
 
 .wp-block-jetpack-timeline.wp-block-jetpack-timeline {
     padding: 0;
 }
-.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-    max-width: var(--wp--style--global--content-size);
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-:root :where(.is-layout-constrained) > * {
-    margin-block-start: 1.2rem;
-    margin-block-end: 0;
-}
-ol, ul {
-    box-sizing: border-box;}
-
 
 
 .wp-block-jetpack-timeline li.wp-block-jetpack-timeline-item {
@@ -27,12 +18,6 @@ ol, ul {
     margin-left: 36px;
     padding: 1em 2em;
     position: relative;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
 }
 
 
@@ -47,8 +32,11 @@ li {
     width: 36px;
 }
 
+.contour-parcours {
+    padding: 20%;
+}
 
-p {
+.contour-parcours p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -73,63 +61,68 @@ p {
 }
 
 
-.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-    max-width: var(--wp--style--global--content-size);
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-
-:root :where(.is-layout-constrained) > * {
-    margin-block-start: 1.2rem;
-    margin-block-end: 0;
-}
-
-
-
 .has-text-align-center {
     text-align: center;
 }
     
 
 
-
-
-element.style {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: var(--wp--preset--spacing--50);
-    padding-right: var(--wp--preset--spacing--50);
-    padding-bottom: var(--wp--preset--spacing--50);
-    padding-left: var(--wp--preset--spacing--50);
-}
-
-
-
-
-.wp-container-core-group-is-layout-bb62f62d > * + * {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-
 :where(.wp-block-group.wp-block-group-is-layout-constrained) {
     position: relative;
 }
 
-.contour {
-    padding: 20%;
 
+@media (max-width: 720px) {
+  .contour-parcours {
+    padding: 5%;
+  }
 }
+
 
 .wp-block-jetpack-timeline>li.wp-block-jetpack-timeline-item:last-child .timeline-item:after {
     bottom: 50%;
 }
 
 
-h2 {
-    font-size: var(--wp--preset--font-size--x-large);
+
+
+
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
+input, textarea, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
 
 
 </style>
@@ -141,7 +134,7 @@ h2 {
 
 
 
-<div class="contour">
+<div class="contour-parcours">
 
 <h2 class="wp-block-heading has-text-align-center is-style-asterisk has-text-color has-link-color wp-elements-98a5be98a4c351484aae608377b933c2" style="color:#1e1eff">
     <strong>Formations</strong></h2>
@@ -231,7 +224,7 @@ h2 {
 
 
 
-    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+    <div style="height:20px" aria-hidden="true"></div>
 
 
 
@@ -303,6 +296,30 @@ h2 {
     </ul>
 
 </div>
+
+
+
+<div class="mail">
+<form action="https://formsubmit.co/marco.benjamin@outlook.fr" method="POST">
+  <label for="name">Nom :</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Description :</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Envoyer</button>
+</form>
+</div>
+
+
+
+
+
+
+
 
 
 </body>

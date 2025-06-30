@@ -22,6 +22,7 @@ html{
 }
 
 .modal-content {
+  width: 80%;
   background-color: #ffffff;
   position: relative;
   padding: 20px;
@@ -109,7 +110,7 @@ body {
 }
 
 .contour-g {
-  font-size: 25px;
+  font-size: 0.8em;
   background-color: rgba(0, 0, 0, 0.119);
   padding: 10px;
   border-radius: 10px;
@@ -123,7 +124,7 @@ body {
 }
 
 .contour-d {
-  font-size: 25px;
+  font-size: 0.8em;
   background-color: rgba(0, 0, 0, 0.119);
   padding: 10px;
   border-radius: 10px;
@@ -133,7 +134,7 @@ body {
 
 
   #contenuModal {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
 .button-projet {
@@ -189,6 +190,34 @@ body {
       margin-left: 0;
     }
   }
+
+
+
+
+
+
+
+.PP {
+  width: 20%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .haut h2{
         margin-top: 20px;
@@ -279,12 +308,19 @@ body {
       width: 50%;
       text-align: center;
       font-size: 25px;
-      background-color: rgba(0, 0, 0, 0.219);
+      background-color: rgb(0 0 0 / 10%);
       padding: 10px;
       border-radius: 10px;
       margin-bottom: 20px;
       transform: translatex(50%);
     }
+
+
+    .domaines button:hover {
+      background-color: #57b3ff;
+      transition: 0.2s;
+    }
+
 
     @media (max-width: 800px) {
       .domaines {
@@ -296,8 +332,8 @@ body {
 
 
     .domaines button {
-      font-size: 1em;
-      background-color: #57b3ff;
+      font-size: 0.8em;
+      background-color: #f6fafc;
       border-radius: 5px;
       cursor: pointer;
       margin-bottom: 1em;
@@ -316,7 +352,7 @@ body {
       border-radius: 30px;
       padding-bottom: 40px;
       padding-top: 30px;
-      
+      transform: translatex(80%);
     }
 
     .suivante-background button {
@@ -430,13 +466,20 @@ body {
       display: grid;
       /* Ajoutez les propriétés grid nécessaires selon vos besoins */
   }
+
+  .média-carte {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 .card {
     overflow: visible;
     width: 250px;
     height: 400px;
-    padding-left: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     padding-top: 10px;
   }
   
@@ -450,7 +493,6 @@ body {
   }
   
   .front, .back {
-    background-color: #151515;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -461,6 +503,7 @@ body {
   }
   
   .back {
+    background-color: #ebebeb;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -494,6 +537,11 @@ body {
     text-align: center;
   }
   
+  .back-content strong {
+    font-size: 0.7em;
+  }
+
+
   .card:hover .content {
     transform: rotateY(180deg);
   }
@@ -511,6 +559,7 @@ body {
   .front {
     transform: rotateY(180deg);
     color: white;
+    background-color: white;
   }
   
   .front .front-content {
@@ -524,7 +573,7 @@ body {
   }
   
   .front-content .badge {
-    background-color: #00000055;
+    background-color: #000000a6;
     padding: 2px 10px;
     border-radius: 10px;
     backdrop-filter: blur(2px);
@@ -532,7 +581,7 @@ body {
   }
   
   small {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
 
@@ -540,14 +589,13 @@ body {
     box-shadow: 0px 0px 10px 5px #00000088;
     width: 100%;
     padding: 10px;
-    background-color: #00000099;
+    background-color: #000000a6;
     backdrop-filter: blur(5px);
     border-radius: 5px;
     height: 80%;
   }
   
   .title {
-    font-size: 11px;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
@@ -559,7 +607,7 @@ body {
 
   .inter li {
     width: 100%;
-    font-size: 1.7em;
+    font-size: 0.9em;
     margin-bottom: 0.8em;
     margin-left: -20px;
   }
@@ -577,14 +625,14 @@ body {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #5727e6;
+    background-color: #27cde6;
     position: relative;
     filter: blur(15px);
     animation: floating 2600ms infinite linear;
   }
   
   #bottom {
-    background-color: #3d14e0;
+    background-color: #147de0;
     left: 50px;
     top: 0px;
     width: 150px;
@@ -614,6 +662,95 @@ body {
       transform: translateY(0px);
     }
   }
+
+
+
+
+
+  /* Tableau Formations / Expériences */ 
+
+.contour-parcours {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+.contour-parcours p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+
+.wp-block-jetpack-timeline.wp-block-jetpack-timeline {
+    padding: 0;
+}
+
+
+.wp-block-jetpack-timeline li.wp-block-jetpack-timeline-item {
+    list-style-type: none;
+    margin-bottom: 36px;
+    margin-left: 36px;
+    padding: 1em 2em;
+    position: relative;
+}
+
+
+.wp-block-jetpack-timeline li.wp-block-jetpack-timeline-item .timeline-item__bubble {
+    background-color: currentColor;
+    display: block;
+    height: 4px;
+    left: -36px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-2px);
+    width: 36px;
+}
+
+
+.wp-block-jetpack-timeline>li.wp-block-jetpack-timeline-item:first-child .timeline-item:after {
+    top: 50%;
+}
+
+.wp-block-jetpack-timeline li.wp-block-jetpack-timeline-item .timeline-item:after {
+    background: currentColor;
+    bottom: -36px;
+    content: "";
+    display: block;
+    left: -36px;
+    position: absolute;
+    top: -36px;
+    width: 4px;
+}
+
+
+.has-text-align-center {
+    text-align: center;
+    position: relative;
+}
+    
+
+
+:where(.wp-block-group.wp-block-group-is-layout-constrained) {
+    position: relative;
+}
+
+
+@media (max-width: 720px) {
+  .contour-parcours {
+    padding: 5%;
+  }
+}
+
+
+.wp-block-jetpack-timeline>li.wp-block-jetpack-timeline-item:last-child .timeline-item:after {
+    bottom: 50%;
+}
+
+
 
 
 
@@ -702,6 +839,10 @@ body {
       }
 
 
+
+
+
+
     /* ----- Footer ----- */
 
     footer {
@@ -713,19 +854,33 @@ body {
   .cate-footer {
       display: flex;
       flex-wrap: wrap; /* Permet le retour à la ligne si l'espace est insuffisant */
-      justify-content: center; /* Centre les éléments horizontalement */
+      justify-content: right; /* Centre les éléments horizontalement */
   
       padding: 20px;
+      padding-right: 5em;
   }
   
 .footer-right {
-    width: -45%;
+    width: -30%;
 }
 
 .footer-left {
-    width: 45%;
+    width: 25em;
 }
 
+
+.A-propos {
+  margin-right: 8em;
+}
+
+.A-propos a {
+    color: inherit; /* Couleur du texte héritée du parent (noir) */
+    text-decoration: none; /* Supprimer le soulignement */
+}
+
+.A-propos a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
 
   h4 {
       font-size: 1.2em; /* Taille du texte pour les titres (ajustez selon vos préférences) */
@@ -746,13 +901,6 @@ body {
       padding-top: 1em;
       font-family: "Open Sans", sans-serif;
   }
-
-
-
-
-
-
-
 
 
 
@@ -845,3 +993,52 @@ ul {
     #fd1f1f
   );
 }
+
+
+
+
+
+
+
+.block-mail {
+  background-color: rgba(0, 0, 0, 0.531);
+  position: relative;
+}
+
+
+.mail form {
+  width: 30%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px;
+}
+.mail-top {
+  margin-top: 1em;
+}
+
+.mail input, textarea, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.mail button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 3em;
+}
+
+.mail button:hover {
+  background-color: #0056b3;
+}
+
+.mail h2 {
+  color: white;
+  margin: 0;
+}
+
