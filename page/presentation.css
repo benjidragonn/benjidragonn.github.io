@@ -48,6 +48,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -74,31 +76,67 @@ body {
         /* Ajoutez du padding en haut pour éviter que le contenu soit caché derrière l'overlay */
         padding-top: 0; /* Ajustez selon vos besoins */
         align-items: center;
+        justify-content: center;
     }
-
-
-
-
-    .haut {
-      text-align: left;
-      font-size: 25px;
-      border: 4px #15007f solid;
-      padding-bottom: 10px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      color: rgb(0, 0, 0);
-      width: 40%;
-      margin-left: 10%;
-    }
-
-
-
-/* ----- Partie 2 Présentation ----- */
 
 
 .content-pres {
   position: sticky;
+  justify-items: center;
 }
+
+
+
+    .haut {
+      display: flex;
+      text-align: left;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      color: rgb(0, 0, 0);
+      margin-top: 60px;
+    }
+
+
+    .haut p {
+      font-size: 1em;
+      
+    }
+
+
+
+
+
+  .PP {
+    width: 200px;
+    margin-left: 2em;
+    vertical-align: middle; /* Pour centrer verticalement l'image dans le conteneur */
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+    .haut h2{
+        margin-top: 20px;
+        text-align: left;
+        padding-top: 20px;
+        color: #ffffff;
+        font-size : 1em;
+    }
+
+.titre-haut {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* ----- Partie 2 Présentation ----- */
+
+
+
 
 .presentation {
   margin-left: 20%;
@@ -191,47 +229,6 @@ body {
     }
   }
 
-
-
-
-
-
-
-.PP {
-  width: 20%;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .haut h2{
-        margin-top: 20px;
-        text-align: left;
-        padding-top: 20px;
-        color: #ffffff;
-        font-size : 1,5em;
-    }
-
-.titre-haut {
-  position: relative;
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
 
 
     /* ----- Image flip ----- */

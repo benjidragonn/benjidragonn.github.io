@@ -16,7 +16,6 @@
 
 
   <!-- Contenu de l'overlay -->
-  <span id="présentation"></span>
   <div class="overlay-haut">
 
     <section class="top-nav">
@@ -51,7 +50,7 @@
 
     <!-- Fond d'écran -->
 
-    <div class="wrapper">
+    <section class="wrapper">
       <div class="carre">
         <div></div>
         <div></div>
@@ -64,7 +63,7 @@
         <div></div>
         <div></div>
       </div>
-    </div>
+    </section>
 
 
 
@@ -77,13 +76,15 @@
     <!-- Partie 2 Présentation -->
 
     <br>
-    <section class="content-pres">
+    <section class="content-pres" id="Présentation">
 
       <div class="haut">
-        <p>Bonjour,</p>
-        <p>Je m'appelle MARCO Benjamin, et j'ai 23 ans.</p>
+        <div class="Bonjour">
+          <p>Bonjour,</p>
+          <p>Je m'appelle MARCO Benjamin, et j'ai 23 ans.</p>
+        </div>
+          <img class="PP" src="/page/img/Profil.jpg" alt="Profil">
       </div>
-              <img class="PP" img="page/img/Profil.jpg" alt="Profil">
       <h2>
         <div class="presentation">
 
@@ -113,7 +114,7 @@
 
         <div class="domaines">
           <p>Mes domaines :</p>
-                      <div class="carousel"><iframe class="carousel-3d" src="components/carousel-perspective.html" frameborder="0"></iframe></div>
+            <div class="carousel"><iframe class="carousel-3d" src="components/carousel-perspective.html" frameborder="0"></iframe></div>
           <button
             onclick="afficherModal('Un graphiste est un professionnel spécialisé dans la création graphique. Il peut travailler sur des supports variés tels que des affiches, des sites web, des logos ...')">Graphist</button>
           <button
@@ -131,7 +132,9 @@
     </section>
     <br>
 
-    <!-- Partie 2 Titre -->
+    <!-- Partie 2 DOMAINES -->
+
+<divid="Domaines"></div>
 
     <div class="titre-haut">
       <h2>Mes compétences dans différents domaines</h2>
@@ -802,17 +805,17 @@
             </div>
         <div class="A-propos">
           <h4>A Propos</h4>
-            <li><a href="page/img/CV 2025" download>Accueil</a></li>
-            <li><a href="page/img/CV 2025" download>Présentation</a></li>
-            <li><a href="page/img/CV 2025" download>Domaines</a></li>
-            <li><a href="page/img/CV 2025" download>Parcours Professionnel</a></li>
-            <li><a href="page/img/CV 2025" download>Formations</a></li>
-            <li><a href="page/img/CV 2025" download>Projets</a></li>
+            <li><a href="https://benjidragonn.github.io/">Accueil</a></li>
+            <li><a href="#Présentation">Présentation</a></li>
+            <li><a href="#Domaines">Domaines</a></li>
+            <li><a href="#Parcours Professionnel">Parcours Professionnel</a></li>
+            <li><a href="#Formations">Formations</a></li>
+            <li><a href="https://benjidragonn.github.io/page/projet.html">Projets</a></li>
         </div>
             <div class="footer-right">
                 <h4>Liens et Téléchargement</h4>
                 <ul>
-                    <li><a href="page/img/CV 2025" download>CV (Téléchargement)</a></li>
+                    <li><a href="/page/img/CV2025.pdf" target="_blank">CV Curiculum Vitae</a></li>
                 </ul>
             </div>
         </div>
