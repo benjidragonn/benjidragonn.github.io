@@ -54,21 +54,6 @@ body {
 
 
 
-  .overlay-haut {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff; /* couleur de fond avec une opacité de 50% */
-    color: white;
-    padding: 0;
-    align-items: center; /* Aligner les éléments verticalement au centre */
-    z-index: 20;
-  }
-
-
-
-
 
 /* ----- Partie 1 Arrière plan ----- */
 
@@ -103,18 +88,22 @@ body {
     }
 
 
-
+.bonjour {
+  border-right: #000 10px;
+}
 
 
   .PP {
-    width: 200px;
-    margin-left: 2em;
+    width: 180px;
     vertical-align: middle; /* Pour centrer verticalement l'image dans le conteneur */
     border-radius: 50%;
+    transform: translateX(50%);
   }
 
 
-
+.qualité {
+  justify-items: center;
+}
 
 
 

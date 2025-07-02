@@ -47,7 +47,7 @@ body {
     /* Style pour l'image */
     .titre img {
         vertical-align: middle; /* Alignement vertical au centre par rapport au texte */
-        width: 50px;
+        height: 43px;
     }
 
 
@@ -60,7 +60,7 @@ body {
     background-color: #ffffff;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FFF;
-    height: 50px;
+    height: 45px;
     padding: 1em;
   }
   
