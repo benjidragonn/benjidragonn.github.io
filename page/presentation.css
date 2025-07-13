@@ -194,47 +194,6 @@ body {
 
 
 
-    @media (max-width: 800px) {
-        .presentation{
-            width: 80%;
-            display: contents;
-        }
-        .presentation{
-          width: 80%;
-          display: contents;
-        }
-        .presentation-1, .presentation-2 {
-          display: contents;
-        }
-
-        .carousel-3d {
-            margin-top: 0;
-            width: 100%;
-        }
-        .button-projet {
-            margin-left: 0;
-        }
-        .button-projet img {
-            width: 90%;
-        }
-        .haut h2 {
-          margin-left: 1.5em;
-          width: 80%;
-        }
-        .contour-d {
-          margin-left: 1em;
-          margin-right: 1em;
-        }
-        .haut {
-          display: block;
-        }
-        .cate-footer {
-          padding: 0;
-        }
-    }
-
-
-
     /* ----- Image flip ----- */
 
     .flip-container {
@@ -851,11 +810,10 @@ body {
       justify-content: right; /* Centre les éléments horizontalement */
   
       padding: 20px;
-      padding-right: 5em;
   }
   
 .footer-right {
-    width: -30%;
+    margin-right: 2em;
 }
 
 .footer-left {
@@ -1064,7 +1022,7 @@ ul {
     display: flex;
     align-items: center; /* Alignement vertical au centre */
     justify-content: center; /* Alignement horizontal au centre */
-    margin-right: 5%;
+    margin-right: 10em;
 }
 
 .footer-logo img {
@@ -1072,3 +1030,47 @@ ul {
     height: 5em;
 }
 
+
+
+
+    @media (max-width: 800px) {
+        .presentation{
+            width: 80%;
+            display: contents;
+        }
+        .presentation{
+          width: 80%;
+          display: contents;
+        }
+        .presentation-1, .presentation-2 {
+          display: contents;
+        }
+
+        .carousel-3d {
+            margin-top: 0;
+            width: 100%;
+        }
+        .button-projet {
+            margin-left: 0;
+        }
+        .button-projet img {
+            width: 90%;
+        }
+        .haut h2 {
+          margin-left: 1.5em;
+          width: 80%;
+        }
+        .contour-d {
+          margin-left: 1em;
+          margin-right: 1em;
+        }
+        .haut {
+          display: block;
+        }
+        .cate-footer {
+          justify-content: center;
+        }
+        .footer-logo {
+          margin-right: 0;
+        }
+    }
