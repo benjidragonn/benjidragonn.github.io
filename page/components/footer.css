@@ -1,0 +1,180 @@
+    /* ----- Footer ----- */
+
+    footer {
+      background-color: #ffffff;
+      color:rgb(0, 0, 0);
+      position: relative;
+  }
+  
+  .cate-footer {
+      display: flex;
+      flex-wrap: wrap; /* Permet le retour à la ligne si l'espace est insuffisant */
+      justify-content: right; /* Centre les éléments horizontalement */
+  
+      padding: 20px;
+  }
+  
+.footer-right {
+    margin-right: 2em;
+}
+
+.footer-left {
+    width: 25em;
+}
+
+@media (max-width: 720px) {
+  .footer-left {
+    text-align: center;
+  }
+}
+
+
+.A-propos {
+  margin-right: 3em;
+}
+
+.A-propos a {
+    color: inherit; /* Couleur du texte héritée du parent (noir) */
+    text-decoration: none; /* Supprimer le soulignement */
+}
+
+.A-propos a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+  h4 {
+      font-size: 1.2em; /* Taille du texte pour les titres (ajustez selon vos préférences) */
+  }
+  
+.footer-right a {
+    color: inherit; /* Couleur du texte héritée du parent (noir) */
+    text-decoration: none; /* Supprimer le soulignement */
+}
+
+.footer-right a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+  .footer-center {
+      text-align: center;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.8em;
+  }
+
+
+
+  /* From Uiverse.io by wilsondesouza */ 
+ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-logo{
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+    margin-right: 10em;
+}
+
+.footer-logo img {
+    vertical-align: middle; /* Alignement vertical au centre par rapport au texte */
+    height: 5em;
+}
