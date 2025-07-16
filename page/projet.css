@@ -3,12 +3,15 @@ html{
     margin: 0;
 }
 
+
 /* ----- Body ----- */
 
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-haut {
@@ -41,6 +44,41 @@ body {
     color: white;
     margin-top: 1em;
   }
+
+
+
+/* ----- Button échange ----- */
+
+
+.button-change {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.button-change a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.selector-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: #007BFF;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+
+
 
 
 /* ----- Partie 2 Réalisation ----- */
@@ -183,31 +221,3 @@ body {
         color: #ccc8c8;
     }
 
-    /* ----- Footer ----- */
-
-    footer {
-        background-color: #333;
-        color:white;
-        position: relative;
-    }
-    
-    .cate-footer {
-        display: flex;
-        flex-wrap: wrap; /* Permet le retour à la ligne si l'espace est insuffisant */
-        justify-content: center; /* Centre les éléments horizontalement */
-    
-        padding: 20px;
-    }
-    
-    
-    h4 {
-        font-size: 1.2em; /* Taille du texte pour les titres (ajustez selon vos préférences) */
-    }
-    
-    .footer-center {
-        text-align: center;
-        padding-bottom: 1em;
-        padding-top: 1em;
-        font-family: "Open Sans", sans-serif;
-    }
-  

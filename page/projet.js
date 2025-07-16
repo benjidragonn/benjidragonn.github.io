@@ -57,3 +57,38 @@
 
 
 
+
+  const links = document.querySelectorAll('.button-change a');
+  const selectorBar = document.querySelector('.selector-bar');
+
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      // Facultatif : pour éviter le saut de page pendant les tests
+      e.preventDefault();
+
+      const linkWidth = link.offsetWidth;
+      const linkLeft = link.offsetLeft;
+
+      selectorBar.style.width = `${linkWidth}px`;
+      selectorBar.style.left = `${linkLeft}px`;
+
+      // Active class
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+
+  // Initial position
+  window.addEventListener('load', () => {
+    const activeLink = links[0];
+    selectorBar.style.width = `${activeLink.offsetWidth}px`;
+    selectorBar.style.left = `${activeLink.offsetLeft}px`;
+    activeLink.classList.add('active');
+  });
+
+  // Reposition on resize
+  window.addEventListener('resize', () => {
+    const activeLink = document.querySelector('.button-change .active') || links[0];
+    selectorBar.style.width = `${activeLink.offsetWidth}px`;
+    selectorBar.style.left = `${activeLink.offsetLeft}px`;
+  });
