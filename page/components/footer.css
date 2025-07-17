@@ -183,4 +183,8 @@ ul {
   .footer-logo {
     margin-right: 0;
   }
+
+  .cate-footer {
+    justify-content: center;
+  }
 }
