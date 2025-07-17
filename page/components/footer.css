@@ -178,3 +178,9 @@ ul {
     vertical-align: middle; /* Alignement vertical au centre par rapport au texte */
     height: 5em;
 }
+
+@media (max-width: 720px) {
+  .footer-logo {
+    margin-right: 0;
+  }
+}

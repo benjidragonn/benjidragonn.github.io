@@ -901,8 +901,5 @@ body {
           align-items: center;
           flex-wrap: wrap; /* utile si les enfants dépassent */
         }
-        .footer-logo {
-          margin-right: 0;
-        }
     }
 
