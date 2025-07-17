@@ -1,96 +1,16 @@
-html{
-    height: 100%;
-    margin: 0;
-}
-
-
-/* ----- Body ----- */
-
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Empêche la barre de défilement horizontale */
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-/* ----- Partie 1 Arrière plan ----- */
-
-.hauteur-contenu {
-    /* Ajoutez du padding en haut pour éviter que le contenu soit caché derrière l'overlay */
-    padding-top: 2em; /* Ajustez selon vos besoins */
-}
-
-
-
-
-
-
-
-
-
-/* ----- Partie 2 Réalisation ----- */
-
-.catégorie {
-    position: relative;
-    justify-items: center;
-}
-
-.titre-catégorie {
-    margin-left: 5%;
-    padding-left: 20px;
-}
-
-.titre-catégorie p {
-    color: white;
-}
-
-.container {
-    position: relative;
-    color: #ccc8c8;
-    width: 70%;
-}
-
-@media (max-width: 720px) {
-    .container {
-        display: grid;
-        padding: 20px;
-        color: #ccc8c8;
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 3</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f80000;
+      overflow-x: hidden;
     }
-
-}
-
-.box {
-    font-size: 0.8em;
-    background-color: rgba(255, 255, 255, 0.58);
-    margin-bottom: 20px;
-    right: 0px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.box img {
-    max-width: 60%;
-    max-height: 300px;
-    object-fit: contain;
-}
-
-.box h2 {
-    color: black;
-}
-
-
-.box p {
-    color: black;
-}
-
-
-.box h3 {
-    color: black;
-}
 
 
      .content {
@@ -133,23 +53,13 @@ body {
     }
   }
 
-    .navbar-page {
+    .navbar {
       height: 80px;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #222;
-      margin-top: 3em;
     }
-
-
-        @media (max-width: 800px) {
-          .navbar-page {
-            display: none;
-            margin-top: 0;
-          }
-        }
-
 
     .nav-links {
       position: relative;
@@ -211,6 +121,7 @@ body {
     }
 
     .content {
+      padding: 40px;
       text-align: center;
       color: white;
       opacity: 0;
@@ -233,3 +144,51 @@ body {
     .slide-in-left {
       animation: slideInFromLeft 0.5s ease forwards;
     }
+  </style>
+</head>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page 3</title>
+  <!-- same <style> copied from page1.html -->
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-links" id="nav">
+      <a href="page1.html" data-index="0"><span>Page 1</span></a>
+      <a href="page2.html" data-index="1"><span>Page 2</span></a>
+      <a href="page3.html" class="active" data-index="2"><span>Page 3</span></a>
+      <div class="highlighter" id="highlighter"></div>
+    </div>
+  </div>
+  <div class="content" id="content">
+    <h1>Page 3</h1>
+    <p>Bienvenue sur la troisième page !</p>
+  </div>
+  <script>
+    const links = document.querySelectorAll('.nav-links a');
+    const highlighter = document.getElementById('highlighter');
+    const content = document.getElementById('content');
+    const prevIndex = Number(sessionStorage.getItem("pageIndex"));
+    const thisIndex = 2;
+    if (!isNaN(prevIndex)) {
+      if (thisIndex < prevIndex) content.classList.add("slide-in-left");
+      else content.classList.add("slide-in-right");
+    } else {
+      content.style.opacity = 1;
+    }
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        sessionStorage.setItem("pageIndex", link.dataset.index);
+      });
+    });
+    function updateHighlighter() {
+      const activeLink = document.querySelector('.nav-links a.active');
+      highlighter.style.width = activeLink.offsetWidth + "px";
+      highlighter.style.transform = `translate(${activeLink.offsetLeft}px, -50%)`;
+    }
+    window.addEventListener("load", updateHighlighter);
+    window.addEventListener("resize", updateHighlighter);
+  </script>
+</body>
+</html>
