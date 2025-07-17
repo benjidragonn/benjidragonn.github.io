@@ -57,7 +57,7 @@ body {
 @media (max-width: 720px) {
     .container {
         display: grid;
-        padding: 20px;
+        width: 90%;
         color: #ccc8c8;
     }
 
