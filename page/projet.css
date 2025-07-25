@@ -211,6 +211,7 @@ body {
     }
 
     .content {
+      display: contents;
       text-align: center;
       color: white;
       opacity: 0;
