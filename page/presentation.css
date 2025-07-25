@@ -859,9 +859,10 @@ body {
 }
 
 
-.carte-média {
+/*.carte-média {
   display: contents;
 }
+  */
 
     @media (max-width: 800px) {
         .presentation{
@@ -903,8 +904,8 @@ body {
           align-items: center;
           flex-wrap: wrap; /* utile si les enfants dépassent */
         }
-        .carte-média {
+        /*.carte-média {
           display: flex;
-        }
+        }*/
     }
 
