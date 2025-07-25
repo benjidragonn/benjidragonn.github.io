@@ -472,7 +472,7 @@ body {
     position: absolute;
     content: ' ';
     display: block;
-    width: 160px;
+    width: 100%;
     height: 160%;
     background: linear-gradient(90deg, transparent, #27cde6, #147de0, #202bcb, #0b0bde, transparent);
     animation: rotation_481 5000ms infinite linear;
@@ -859,7 +859,9 @@ body {
 }
 
 
-
+.carte-média {
+  display: contents;
+}
 
     @media (max-width: 800px) {
         .presentation{
@@ -900,6 +902,9 @@ body {
           justify-content: center;
           align-items: center;
           flex-wrap: wrap; /* utile si les enfants dépassent */
+        }
+        .carte-média {
+          display: flex;
         }
     }
 
