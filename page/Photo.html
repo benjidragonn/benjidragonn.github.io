@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Modélisation-3D</title>
+    <link href="projet.css" rel="stylesheet">
+    <link href="components/nav.css" rel="stylesheet">
+    <link href="components/fond.css" rel="stylesheet">
+    <link href="components/footer.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-links" id="nav">
+      <a href="page1.html" data-index="0"><span>Page 1</span></a>
+      <a href="page2.html" data-index="1"><span>Page 2</span></a>
+      <a href="page3.html" class="active" data-index="2"><span>Page 3</span></a>
+      <div class="highlighter" id="highlighter"></div>
+    </div>
+  </div>
+  <div class="content" id="content">
+    <h1>Page 3</h1>
+    <p>Bienvenue sur la troisième page !</p>
+  </div>
+  <script>
+    const links = document.querySelectorAll('.nav-links a');
+    const highlighter = document.getElementById('highlighter');
+    const content = document.getElementById('content');
+    const prevIndex = Number(sessionStorage.getItem("pageIndex"));
+    const thisIndex = 2;
+    if (!isNaN(prevIndex)) {
+      if (thisIndex < prevIndex) content.classList.add("slide-in-left");
+      else content.classList.add("slide-in-right");
+    } else {
+      content.style.opacity = 1;
+    }
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        sessionStorage.setItem("pageIndex", link.dataset.index);
+      });
+    });
+    function updateHighlighter() {
+      const activeLink = document.querySelector('.nav-links a.active');
+      highlighter.style.width = activeLink.offsetWidth + "px";
+      highlighter.style.transform = `translate(${activeLink.offsetLeft}px, -50%)`;
+    }
+    window.addEventListener("load", updateHighlighter);
+    window.addEventListener("resize", updateHighlighter);
+  </script>
+</body>
+</html>
